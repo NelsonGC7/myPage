@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+:root{
+    --Onest:"Onest", sans-serif;
+    
+
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(22, 25, 48);
+        font-family: var(--Onest);
+    }
+
+    h1, h2, p {
+        font-family: var(--Onest),'Courier New', Courier, monospace;
+        
+    }
+    h1{
+        color: #ffffff;
+    }
+    p{
+        color: #ffffffa6
+    }
+}
+
+
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    h1, h2, p {
+        font-family: Arial, sans-serif;
+    }
+}
+.Header{
+    height: 2.5rem;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.Header__nav{
+    min-width: 30%;
+    height:2.5rem;
+    border-radius: 25px;
+    background-color: rgba(216, 216, 231, 0.219);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    
+    
+}
+.Header a{
+    text-decoration: none;
+    color: aliceblue;
+  
+}
+.Header  a:hover{
+    color: rgb(250, 204, 21);
+}
+.Main{
+   
+    padding: 6rem 0 6rem 0;
+    height: auto;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.Main__perfil{
+    max-width: 60%;
+    height: auto;
+}
+.Main__perfil__img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.avatar{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: url(../img/mio1.jpg);
+    background-position: center;
+    background-size:cover;
+}
+.Main__perfil__img button{
+    height: 2rem;
+    width: 10rem; 
+    border-radius: 0.9rem;
+    background-color: rgba(216, 216, 231, 0.219);
+    color: #ffffff;
+    border:2px solid rgba(216, 216, 231, 0.445);    
+}
+
+.Main_buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.4rem;
+
+}
+.Main__text{
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    strong{
+        font-size: 1.5rem;
+        color: rgba(250, 204, 21, 0.801);
+        font-weight: 700;}
+    p{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+
+   
+   
+}
+.Main_buttons button{
+        height: 2rem;
+        width: max-content;
+        border-radius: 0.9rem;
+        padding: .5rem;
+        background-color: rgba(216, 216, 231, 0.219);
+        display: flex;
+        gap: 0.2 rem;
+        align-items: center;
+        color: #ffffff;
+        border:2px solid rgba(216, 216, 231, 0.445);    
+}
+.Section{
+    height: auto;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    h3{
+        font-size: 1.9rem;
+        line-height: 2rem;
+        color: #ffffff;
+        margin: 0;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+        color: #ffffffbe;
+        margin: 0;
+    }
+}
+.Section > h2{
+    color: #ffffff;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+
+.Section__txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 17rem;
+    position: relative;
+    h3{
+     color: rgba(250, 204, 21, 0.801);;
+    
+    }
+   >  p{
+    margin-bottom: 2rem;
+}
+
+
+}
+.Section__txt_skill{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.5rem;
+    
+}
+.Section__txt_skill_s{
+    height: 1.5rem;
+    width: auto;
+    border: #ffffff solid 1px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 1.7rem;
+    padding-right: 0.5rem;
+    p{
+        color: #ffffff;
+    
+    }
+    
+    .img1{
+        background-image:url(../img/html.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.2rem 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid #ffffff 1px;
+       
+    }
+    .img2{
+        background-image:url(../img/css.svg) ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.2rem 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid #ffffff 1px;
+        
+    }
+    .img3{
+        background-image: url(../img/js.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.2rem 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid #ffffff 1px;
+       
+    }
+    .img4{
+        background-image: url(../img/api.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.2rem 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid #ffffff 1px;
+       
+    
+    
+    }
+    p{
+        font-size: 1rem;
+        cursor: context-menu;
+    }
+}
+.Section__txt_bttons{
+    height: 5rem;
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.2rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .button1{
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../img/next.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(250, 204, 21, 0.349);
+        border: rgb(250, 204, 21) solid 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+            border: #ffffff solid 2px;
+            background-color: rgba(250, 204, 21, 0.733);
+             
+         }
+    }
+    .button2{
+        width:2rem;
+        height: 2rem;
+        background-image: url(../img/be.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(250, 204, 21, 0.349);
+        border: rgb(250, 204, 21) solid 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+           border: #ffffff solid 2px;
+           background-color: rgba(250, 204, 21, 0.733);
+            
+        }
+    }
+}
+
+
+
+.Section__1{
+    
+    height:17rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    .Section__img{
+        position: relative;
+        background-image: url(../img/555shots_so.png);
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 17rem;
+        border-radius: 0.7rem;
+        order: 2;
+        
+        
+    }
+    
+
+}
+.Section__2{
+    height:17rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    .Section__img{
+       
+        background-image: url(../img/939shots_so.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 17rem;
+        border-radius: 0.7rem;
+        order: 2;
+        
+        
+    }
+  
+
+}
+.Section__3{
+    height:17rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    .Section__img{
+        position: relative;
+        background-image: url(../img/707shots_so.png);
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 17rem;
+        border-radius: 0.7rem;
+        order: 2;
+    }
+    .Section__txt_skill_api{
+        height: 1.5rem;
+        width: 1.5rem ;    
+        border: #ffffff solid 1px;
+        border-radius: 50%;
+        background-image: url(../img/api.svg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+ 
+ 
+.Skills{
+    height: auto;
+    width: 70%;
+    margin: auto;
+    padding-top: 4rem;
+
+}
+.Skills > h3{
+    color: #ffffff;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.87rem;
+    line-height: 2.25rem;
+}
+.Skills__conteiner{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "html css js git figma"
+    ".  linux . bash ."
+    
+    ;
+    gap: 0rem;
+    row-gap: 2rem;
+    margin-top: 3rem;
+    .bash{
+        grid-area: bash;
+    }
+    .linux{
+        grid-area: linux;
+    }
+}
+.Skills__skill{
+    width: 10rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    p{
+        color: #ffffff;
+        font-weight: 700;
+    }
+    img{
+        width: 5rem;
+        height: 5rem;
+    
+    }
+
+}
+.Aboutme{
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    h2{
+        font-size: 1.875rem;
+        line-height: 2.25rem; 
+        color: #ffffff;
+    }
+    
+    
+}
+.Aboutme__article{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+    gap: 3rem;
+    p{
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+        color: #ffffffbe;
+    }
+    strong{
+        font-size: 1.2rem;
+        color: rgba(250, 204, 21, 0.801);
+        font-weight: 700;
+    }
+}
+.Aboutme__article_txt{
+    width: 68%;
+    height: max-content;
+}
+.Aboutme__article_figure{
+    width: 13rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img{
+        width: 90%;
+        height: 90%;
+        border-radius: 0.5rem;
+    }
+    
+}
+.Footer{
+    max-width: 75%;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: rgba(216, 216, 231, 0.219);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1.5rem;
+    cite{
+        color: #ffffffdc;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: .6rem;
+        &:hover{
+            color: rgb(250, 204, 21);
+        }
+    
+    }
+    
+}
