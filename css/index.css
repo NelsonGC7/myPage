@@ -9,36 +9,7 @@
     
 
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(22, 25, 48);
-        font-family: var(--Onest);
-    }
 
-    h1, h2, p {
-        font-family: var(--Onest),'Courier New', Courier, monospace;
-        
-    }
-    h1{
-        color: #ffffff;
-    }
-    p{
-        color: #ffffffa6
-    }
-}
-
-
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #ffffff;
-        color: #000000;
-    }
-
-    h1, h2, p {
-        font-family: Arial, sans-serif;
-    }
-}
 .Header{
     height: 2.5rem;
     max-width: 70%;
@@ -56,37 +27,50 @@
     justify-content: space-around;
     position: fixed;
     z-index: 10;
+  backdrop-filter: blur(10px);
     
     
 }
 .Header a{
     text-decoration: none;
-    color: aliceblue;
+    
+    
   
 }
 .Header  a:hover{
     color: rgb(250, 204, 21);
 }
 .Main{
-   
     padding: 6rem 0 6rem 0;
     height: auto;
     max-width: 70%;
     margin: 0 auto;
-}
-.Main__perfil{
-    max-width: 60%;
-    height: auto;
-}
-.Main__perfil__img{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    
 
 }
+.Main__perfil{
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+
+}
+.Main__perfil__img{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    order: 2;
+    position: relative;
+    bottom: -4.3rem;
+   
+}
 .avatar{
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     background-image: url(../img/mio1.jpg);
     background-position: center;
@@ -94,7 +78,7 @@
 }
 .Main__perfil__img button{
     height: 2rem;
-    width: 10rem; 
+    width: 12rem; 
     border-radius: 0.9rem;
     background-color: rgba(216, 216, 231, 0.219);
     color: #ffffff;
@@ -105,9 +89,9 @@
     margin-top: 1.5rem;
     display: flex;
     gap: 1.4rem;
-
 }
 .Main__text{
+    width: 60%;
     h1{
         font-size: 3rem;
         font-weight: 700;
@@ -120,12 +104,9 @@
         font-size: 1.5rem;
         line-height: 1.75rem;
     }
-
-
-   
-   
 }
-.Main_buttons button{
+.Main_buttons a{
+        text-decoration: none;
         height: 2rem;
         width: max-content;
         border-radius: 0.9rem;
@@ -136,6 +117,7 @@
         align-items: center;
         color: #ffffff;
         border:2px solid rgba(216, 216, 231, 0.445);    
+        
 }
 .Section{
     height: auto;
@@ -147,18 +129,18 @@
     h3{
         font-size: 1.9rem;
         line-height: 2rem;
-        color: #ffffff;
+        
         margin: 0;
     }
     p{
         font-size: 1.3rem;
         line-height: 1.75rem;
-        color: #ffffffbe;
+        
         margin: 0;
     }
 }
 .Section > h2{
-    color: #ffffff;
+    
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -175,7 +157,7 @@
     height: 17rem;
     position: relative;
     h3{
-     color: rgba(250, 204, 21, 0.801);;
+     color: rgba(250, 204, 21, 0.801);
     
     }
    >  p{
@@ -203,10 +185,7 @@
     align-items: center;
     border-radius: 1.7rem;
     padding-right: 0.5rem;
-    p{
-        color: #ffffff;
     
-    }
     
     .img1{
         background-image:url(../img/html.svg);
@@ -292,9 +271,16 @@
         border: rgb(250, 204, 21) solid 1px;
         border-radius: 50%;
         cursor: pointer;
+        /*    
+        transition-duration: .5s;
+        transition-property: scale,color,background-color;
+        transition-timing-function: steps(90);//
+        */
+        transition: scale .3s linear,background-color 1s ease;
         &:hover{
             border: #ffffff solid 2px;
             background-color: rgba(250, 204, 21, 0.733);
+            scale:1.1;
              
          }
     }
@@ -308,9 +294,15 @@
         border: rgb(250, 204, 21) solid 1px;
         border-radius: 50%;
         cursor: pointer;
+        /*
+        transition-duration: .5s;
+        transition-property: scale,color,background-color;
+        */
+        transition: scale .3s steps(90) ,background-color 1s ease ;
         &:hover{
            border: #ffffff solid 2px;
            background-color: rgba(250, 204, 21, 0.733);
+           scale: 1.2;
             
         }
     }
@@ -345,7 +337,6 @@
     display: flex;
     gap: 1rem;
     .Section__img{
-       
         background-image: url(../img/939shots_so.jpg);
         background-position: center;
         background-size: cover;
@@ -394,7 +385,7 @@
 
 }
 .Skills > h3{
-    color: #ffffff;
+    
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -431,7 +422,7 @@
     justify-content: space-around;
     margin: 0;
     p{
-        color: #ffffff;
+        
         font-weight: 700;
     }
     img{
@@ -448,8 +439,7 @@
     margin-top: 5rem;
     h2{
         font-size: 1.875rem;
-        line-height: 2.25rem; 
-        color: #ffffff;
+        line-height: 2.25rem;   
     }
     
     
@@ -459,12 +449,11 @@
     height: auto;
     display: flex;
     align-items: center;
-    
     gap: 3rem;
     p{
         font-size: 1.2rem;
         line-height: 1.75rem;
-        color: #ffffffbe;
+
     }
     strong{
         font-size: 1.2rem;
@@ -482,7 +471,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
     img{
         width: 90%;
         height: 90%;
@@ -514,4 +502,173 @@
     
     }
     
+}
+
+
+@keyframes rotateBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(22, 25, 48);
+        font-family: var(--Onest);
+    }
+    a{
+    
+        color: aliceblue;
+    }
+
+    h1, h2, p {
+        font-family: var(--Onest),'Courier New', Courier, monospace;
+        
+    }
+    h1,h2,h3{
+        color: #ffffff;
+    }
+    p{
+        color: #ffffffa6
+    }
+}
+
+
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffffdc;
+        color: rgb(22, 25, 48);
+        font-family: var(--Onest);   
+    }
+    .Main_buttons button{
+        background-color: rgba(250, 204, 21, 0.884);
+        color: #ffffff;
+        border:2px solid rgba(250, 204, 21, 0.801);  
+        cursor: pointer;
+    }
+    a{
+        color: rgb(22, 25, 48);
+        font-family: var(--Onest);
+    }
+    h1, h2, p {
+        font-family: var(--Onest),'Courier New', Courier, monospace;
+        
+    }
+    h1{
+     color: rgb(22, 25, 48);
+    
+    }
+    p{
+        color: rgba(22, 25, 48, 0.836);
+    
+    }
+    .Section__txt_skill_s{
+        height: 1.5rem;
+        width: auto;
+        border: rgba(250, 204, 21, 0.801) 1px;
+        display: flex;
+        gap: 0.5rem;
+        justify-content:space-between;
+        align-items: center;
+        border-radius: 1.7rem;
+        padding-right: 0.5rem;
+        background-color: rgba(250, 204, 21, 0.884);
+        
+        
+        .img1{
+            border: solid rgba(250, 204, 21, 0.801) 1px;
+           
+        }
+        .img2{
+            border: solid rgba(250, 204, 21, 0.801) 1px;
+        }
+        .img3{
+            border: solid rgba(250, 204, 21, 0.801) 1px;
+           
+        }
+        .img4{     
+            border: solid rgba(250, 204, 21, 0.801) 1px;
+        }
+        
+      
+        p{
+            font-size: 1rem;
+            color: white;
+        }
+    }
+    .Section__3{
+        .Section__txt_skill_api{
+            border: solid rgba(250, 204, 21, 0.801) 1px;
+            background-color: rgba(250, 204, 21, 0.884);
+            
+        
+        }
+    
+    }
+    .Footer{
+        background-color: rgba(216, 216, 231, 0.774);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem 0 1.5rem;
+        cite{
+            color: rgb(22, 25, 48);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(22, 25, 48);
+            margin-left: .6rem;
+            &:hover{
+                color: rgb(250, 204, 21);
+            }
+        
+        }
+        
+    }
+}
+
+.bt {
+    height: 50px;
+    width: 500px;
+    background-color: transparent;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 2px solid rgb(0, 255, 127); /* Cambiado a un verde más brillante y estilizado */
+    position: relative;
+}
+
+.bt_bt {
+    height: 500px;
+    width: 500px;
+    background: conic-gradient(from 90deg at 50% 50%,#51e4b8,#21554e,#51e4b8);
+    animation: rotateBackground 5s linear infinite;
+}
+
+.bt::before {
+    content: "Listo para trabajar";
+    height: 42px;
+    width: 99%;
+    border-radius: 15px;
+    background-color: #faf60360  ;/* Coincide con el nuevo color del borde */
+    position: absolute;
+    z-index: 9999;
+    color:  conic-gradient(from 90deg at 50% 50%,#faf603 ,#0a0a0a,#faf603 ); /* Ajusta el color del texto si es necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Hace que el texto sea más destacado */
 }
