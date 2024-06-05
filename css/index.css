@@ -76,13 +76,46 @@
     background-position: center;
     background-size:cover;
 }
-.Main__perfil__img button{
+.Main__perfil__img .button{
+    position: relative;
     height: 2rem;
     width: 12rem; 
-    border-radius: 0.9rem;
-    background-color: rgba(216, 216, 231, 0.219);
+    border-radius: .9rem;
+    overflow: hidden;
     color: #ffffff;
-    border:2px solid rgba(216, 216, 231, 0.445);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after{
+        content: "Listo para trabajar";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.8rem;
+        width: 11.8rem;
+        position: absolute;
+        background-color: rgb(31 41 55);
+        border-radius: .8rem;
+
+    }
+    
+    
+}
+.Main__perfil__img .button .box{
+    height: 20rem;
+    width: 20rem;
+    background-image: conic-gradient(from 90deg at 50% 50%, #FFD700,#21554e, #FFD700);
+    animation: rotateBackground 5s  ease-in-out infinite; 
+
+
+} 
+@keyframes rotateBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 }
 
 .Main_buttons{
@@ -505,14 +538,7 @@
 }
 
 
-@keyframes rotateBackground {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
+
 
 
 
@@ -637,38 +663,3 @@
     }
 }
 
-.bt {
-    height: 50px;
-    width: 500px;
-    background-color: transparent;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 18px;
-    border: 2px solid rgb(0, 255, 127); /* Cambiado a un verde más brillante y estilizado */
-    position: relative;
-}
-
-.bt_bt {
-    height: 500px;
-    width: 500px;
-    background: conic-gradient(from 90deg at 50% 50%,#51e4b8,#21554e,#51e4b8);
-    animation: rotateBackground 5s linear infinite;
-}
-
-.bt::before {
-    content: "Listo para trabajar";
-    height: 42px;
-    width: 99%;
-    border-radius: 15px;
-    background-color: #faf60360  ;/* Coincide con el nuevo color del borde */
-    position: absolute;
-    z-index: 9999;
-    color:  conic-gradient(from 90deg at 50% 50%,#faf603 ,#0a0a0a,#faf603 ); /* Ajusta el color del texto si es necesario */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold; /* Hace que el texto sea más destacado */
-}
