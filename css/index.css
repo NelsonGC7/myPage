@@ -592,8 +592,6 @@ body{
         text-decoration: none;
         color: #ffffff;
         margin-left: .6rem;
-        font-size: 1.1rem;
-        font-weight: 500;
         &:hover{
             color: rgb(250, 204, 21);
         }
@@ -973,7 +971,6 @@ body{
         p{
             
             font-weight: 400;
-            color:white;
             font-size: larger;
         }
         img{
