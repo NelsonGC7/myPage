@@ -299,9 +299,6 @@ body{
         justify-content: center;
         align-items: center;
         border: solid #ffffff 1px;
-       
-    
-    
     }
     p{
         font-size: 1rem;
@@ -545,7 +542,7 @@ body{
        background-repeat: no-repeat;
        background-size: cover;
         border-radius: .7rem;
-        z-index: 9999;
+        
 
     }
     
@@ -974,8 +971,8 @@ body{
             font-size: larger;
         }
         img{
-            width: 7rem;
-            height: 7rem;
+            max-width: 7rem;
+            max-height: 7rem;
         
         }
     
