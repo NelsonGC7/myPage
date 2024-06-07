@@ -6,6 +6,7 @@
 }
 body{
     color: rgb(22, 25, 48);
+    overflow-x: hidden;
 
 
 }
@@ -14,16 +15,16 @@ body{
     
 
 }
-
 .Header{
     height: 2.5rem;
     max-width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .Header__nav{
-    min-width: 30%;
+    width: 30%;
     height:2.5rem;
     border-radius: 25px;
     background-color: rgba(216, 216, 231, 0.219);
@@ -592,15 +593,6 @@ body{
     
 }
 
-
-
-
-
-
-
-
-
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: rgb(22, 25, 48);
@@ -648,8 +640,6 @@ body{
         }
     }
 }
-
-
 
 @media (prefers-color-scheme: light) {
     body {
@@ -770,3 +760,90 @@ body{
     }
 }
 
+@media(max-width: 37.5rem){
+    body{
+        overflow-x: hidden;
+
+    }
+    .Header{
+        width: 90%;
+        height: 3.2rem;
+        
+    }
+    .Header__nav{
+        width: 80%;
+        height: 3.2rem;
+        position: fixed;
+        padding: 0;
+        a{
+            font-size: larger;
+
+        }
+    }
+    .Main{
+        max-width: 90%;
+        padding:2.2rem 0 2.2rem 0;
+    }
+    .Main__perfil{
+        flex-direction: column;
+        height: auto;
+
+    }
+    .Main__perfil__img{
+        order: 1;
+        bottom: 0;
+        width:50%;
+        gap: 1.4rem;
+
+    }
+    .avatar{
+        width: 10rem;
+        height: 10rem;
+        
+       
+    }
+    .Main__perfil__img .button{
+        width: 15rem;
+        height: 3rem;
+        border-radius: 2.4rem;
+        &::after{
+            height: 2.4rem;
+            width: 14.4rem;
+            background-color: rgb(31 41 55);
+            border-radius: 1.3rem;
+            left: .3rem;
+            font-weight: 200;
+            font-size: larger;
+    
+        }
+
+    }
+    .Main__text{
+        order: 2;
+        width: 100%;
+        h1{
+            text-align:center;
+
+        }
+        p{
+            text-align: center;
+           text-wrap:pretty;
+        }
+    }
+    .Main_buttons{
+        width: max-content;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2.8rem;
+    }
+    .Main_buttons a{
+        height: 3rem;
+        width: max-content;
+        border-radius: 1.5rem; 
+    }
+    .Skills{
+        display:none;
+
+    }
+
+}
