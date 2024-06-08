@@ -1016,7 +1016,6 @@ body{
         order: 1;
         width: 16rem;
         height: 19rem;
-    
         &::after{
             width: 15.4rem;
             height: 18.4rem;
