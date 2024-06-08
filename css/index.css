@@ -7,8 +7,6 @@
 body{
     color: rgb(22, 25, 48);
     overflow-x: hidden;
-
-
 }
 :root{
     --Onest:"Onest", sans-serif;
@@ -68,7 +66,7 @@ body{
     gap: .8rem;
     order: 2;
     position: relative;
-    bottom: -4.3rem;
+    bottom: -3.3rem;
    
 }
 .avatar{
@@ -100,12 +98,12 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 1.8rem;
-        width: 11.8rem;
+        height: 1.9rem;
+        width: 11.9rem;
         position: absolute;
         background-color: rgb(31 41 55);
         border-radius: .8rem;
-        left: 2px;
+        left: 1px;
         font-weight: 200;
 
     }
@@ -116,7 +114,7 @@ body{
     height: 20rem;
     width: 20rem;
     background-image: conic-gradient(from 90deg at 50% 50%, #FFD700,#21554e, #FFD700);
-    animation: rotateBackground 5s  ease-in-out infinite; 
+    animation: rotateBackground 2s  ease-in-out infinite; 
 
 
 } 
@@ -142,11 +140,13 @@ body{
         
     }
     strong{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: rgba(250, 204, 21, 0.801);
         font-weight: 700;}
+        line-height: 1.75rem;
+
     p{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 1.75rem;
 
     }
@@ -218,7 +218,7 @@ body{
      color: rgba(250, 204, 21, 0.801);
     
     }
-   >  p{
+    > p{
     margin-bottom: 2rem;
 }
 
@@ -230,7 +230,7 @@ body{
     display: flex;
     align-items: center;
     gap: 0.7rem;
-    margin-bottom: 0.5rem;
+    
     
 }
 .Section__txt_skill_s{
@@ -242,7 +242,7 @@ body{
     justify-content:space-between;
     align-items: center;
     border-radius: 1.7rem;
-    padding-right: 0.5rem;
+    padding-left: .2rem;
     
     
     .img1{
@@ -250,9 +250,9 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 1.2rem 1.2rem;
-        height: 1.5rem;
-        width: 1.5rem;
-        border-radius: 49%;
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -264,8 +264,8 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 1.2rem 1.2rem;
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.3rem;
+        width: 1.3rem;
         border-radius: 49%;
         display: flex;
         justify-content: center;
@@ -278,8 +278,8 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 1.2rem 1.2rem;
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.3rem;
+        width: 1.3rem;
         border-radius: 49%;
         display: flex;
         justify-content: center;
@@ -292,8 +292,8 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 1.2rem 1.2rem;
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.3rem;
+        width: 1.3rem;
         border-radius: 49%;
         display: flex;
         justify-content: center;
@@ -302,7 +302,6 @@ body{
     }
     p{
         font-size: 1rem;
-        cursor: context-menu;
     }
 }
 .Section__txt_bttons{
@@ -310,7 +309,7 @@ body{
     width: 2rem;
     position: absolute;
     right: 0;
-    bottom: 0.2rem;
+    bottom: -.3rem;
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
@@ -319,7 +318,7 @@ body{
     .button1{
         width: 2rem;
         height: 2rem;
-        background-image: url(../img/next.svg);
+        background-image: url(../img/code.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-color: rgba(250, 204, 21, 0.349);
@@ -365,8 +364,8 @@ body{
 
 
 
+
 .Section__1{
-    
     height:17rem;
     width: 100%;
     display: flex;
@@ -429,6 +428,13 @@ body{
         background-position: center;
         background-size: cover;
     }
+}
+
+.Section__1, .Section__2, .Section__3{
+    padding: 1rem;
+    border:#1619306c solid  1px;
+    border-radius: .5rem;
+    height: 19rem;
 }
  
  
@@ -534,8 +540,8 @@ body{
     position: relative;
     &::after{
         content: "";
-        width: 12.6rem;
-        height: 15.6rem;
+        width: 12.7rem;
+        height: 15.7rem;
         position: absolute;
        background-image: url(/img/mio2.jpg);
        background-position: center;
@@ -549,8 +555,8 @@ body{
     .img{
         width: 30rem;
         height: 30rem;
-        background-image: conic-gradient(from 90deg at 50% 50%, #FFD700,#21554e, #FFD700);
-        animation:rotatephoto  5s ease-in-out infinite ;
+        background-image: conic-gradient(from 90deg at 50% 50%, #FFD700,#04eecf, #ffbb00);
+        animation:rotatephoto  1s ease-in-out infinite ;
         flex-shrink: 0;
     }
     
@@ -566,7 +572,7 @@ body{
     
 }
 .Footer{
-    max-width: 92.5%;
+    width: 75%;
     height: 3.4rem;
     margin: 0 auto;
     margin-top: 2.5rem;
@@ -581,7 +587,6 @@ body{
     }
     div{
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -626,6 +631,12 @@ body{
         
 
     }
+    .Section__1, .Section__2, .Section__3{
+        padding: 1rem;
+        border:rgba(250, 204, 21, 0.562) solid  1px;
+        border-radius: .5rem;
+        height: 19rem;
+    }
     .Skills > h3{
         .noneBlack{
             display: none;
@@ -647,7 +658,7 @@ body{
 
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #ffffffdc;
+        background-color: #f1f1fd;
         color: rgb(22, 25, 48);
         font-family: var(--Onest);   
     }
@@ -673,6 +684,16 @@ body{
         color: rgba(22, 25, 48, 0.836);
     
     }
+    .Header__nav{
+        width: 30%;
+        height:2.7rem;
+        border-radius: 25px;
+        background-color: #fff;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        
+        
+    }
     .Main_buttons a{
         background-color: rgba(250, 204, 21, 0.801);
 
@@ -685,7 +706,7 @@ body{
     .Section__txt_skill_s{
         height: 1.5rem;
         width: auto;
-        border: rgba(250, 204, 21, 0.801) 1px;
+        border:#1619306c solid  1px;
         display: flex;
         gap: 0.5rem;
         justify-content:space-between;
@@ -716,12 +737,43 @@ body{
             color: white;
         }
     }
+    
     .Section__3{
         .Section__txt_skill_api{
             border: solid rgba(250, 204, 21, 0.801) 1px;
             background-color: rgba(250, 204, 21, 0.884);
+            border:#1619306c solid  1px;
             
         
+        }
+    
+    }
+    .Section__txt_bttons{
+        .button1{
+            background-color: rgba(22, 25, 48, 0.712) ;
+            border: rgb(22, 25, 48) solid 1px;
+            border-radius: 50%;
+            cursor: pointer;
+            /*    
+            transition-duration: .5s;
+            transition-property: scale,color,background-color;
+            transition-timing-function: steps(90);//
+            */
+            transition: scale .3s linear,background-color 1s ease;
+            
+        }
+        .button2{
+            background-color: rgba(22, 25, 48, 0.712) ;
+            border: rgb(22, 25, 48) solid 1px;
+            border-radius: 50%;
+            cursor: pointer;
+            /*    
+            transition-duration: .5s;
+            transition-property: scale,color,background-color;
+            transition-timing-function: steps(90);//
+            */
+            transition: scale .3s linear,background-color 1s ease;
+            
         }
     
     }
@@ -1020,6 +1072,11 @@ body{
             width: 15.4rem;
             height: 18.4rem;
         }  
+    }
+    .Footer{
+        div{
+            flex-direction: column;
+        }
     }
     
 }
